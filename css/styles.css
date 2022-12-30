@@ -5,6 +5,11 @@ html {
     
 }
 
+.container {
+  padding-top: 50px;
+}
+
+
 @media (max-width: 550px) {
   .container {
     padding: 20px;
@@ -12,7 +17,7 @@ html {
 }
 
 
-}
+
 
 .sk-fading-circle {
     margin: 100px auto;

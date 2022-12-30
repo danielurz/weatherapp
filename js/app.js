@@ -51,7 +51,7 @@ function consultarAPI(ciudad,pais) {
     }).then(datos => {
         limpiarHTML()
         if(datos.cod === '404') {
-            mostrarError('Ciudad no encontrada')
+            mostrarError('City not found')
             return
         }
 
@@ -71,7 +71,7 @@ function mostrarClima(datos) {
 
     const actual = document.createElement('div')
     actual.innerHTML = `
-    <p>Clima en ${name}</p>
+    <p>Weather in ${name}</p>
     <p class="text-6xl">${grados} &#8451.</p>
     <p>Min: ${gradosMin} &#8451.</p>
     <p>Max: ${gradosMax} &#8451</p>
